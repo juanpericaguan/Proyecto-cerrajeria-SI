@@ -490,6 +490,7 @@ position: relative;
         gap: 20px;
     }
 
+
     .eslogan__tablet--index {
         height: 95%;
         padding-top: 80px;
@@ -513,6 +514,12 @@ position: relative;
             
     }
 
+    .costado__movil--column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .cards__candados {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -525,19 +532,32 @@ position: relative;
         display: none;
     }
 
+    .imagen-texto {
+        display: inline-block;
+        text-align: left;
+    }
+
+
     .imagen__texto-movil {
         position: absolute;
-        top: 970px;
+        top: 990px;
         margin: 0;
     }
 
     .imagen__texto-movil h1 {
-        font-size: 35px;
-        margin: 0 0 0 5px;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 0;
     }
 
     .imagen__texto-movil h2 {
         font-size: 25px;
-        margin: 0 0 0 5px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .imagen__texto-movil button {
+        font-size: 10px;
+        margin: 0;
     }
 }

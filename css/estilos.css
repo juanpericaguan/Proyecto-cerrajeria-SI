@@ -4,6 +4,8 @@
     --family-h1: 'Poppins', sans-serif;
     --family-subtitulos: 'Roboto', sans-serif;
     --family-txt: 'Fira Sans', sans-serif;
+    --color-principal: yellow;
+    --color-secundario: rgb(145, 23, 43);
 }
 
 *{
@@ -106,8 +108,6 @@ ul,
 ol {
     list-style: none;
 }
-
-
 
 nav ul li a{
     display: block;
@@ -265,31 +265,42 @@ strong {
     background-color: #00c3ff;
 }
 
-/*Css del main HTML "Productos"*/
+/*Css Productos*/
+
+.carousel-item img {
+    height: 400px;
+}
+
+/*Css del main HTML "Catálogo"*/
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    max-height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
-    max-width: 180px;
-    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     margin: 5px;
     border: solid 1px #ccc;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3);
 }
 
 .card img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px
 }
 
 .card .texto {
     padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.texto__descripcion {
+  flex-grow: 1;
 }
 
 .card .texto > button {
@@ -298,6 +309,7 @@ strong {
     color: #fff;
     padding: 10px;
     width: 100%;
+    height: 40px;
 }
 
 .card .texto > button:hover {
@@ -307,13 +319,15 @@ strong {
 
 /*Css del main HTML "Servicios"*/
 
-.imagen-texto img {
+
+
+.imagen-texto {
 position: relative;
 }
 
 .texto-interior {
     position: absolute;
-    top: 160px;
+    top: 30px;
     margin: 10px;
     padding: 15px;
 
@@ -365,7 +379,7 @@ position: relative;
     flex-direction: column;
 }
 
-.descripcion-parrafos h2 {
+.descripcion-parrafos h3 {
     font-size: 30px;
     color: #2b1919;
     margin-bottom: 25px;
@@ -569,7 +583,6 @@ position: relative;
     }
 
     .imagen-texto {
-        display: inline-block;
         text-align: left;
     }
 
@@ -581,7 +594,7 @@ position: relative;
 
     .imagen__texto-movil {
         position: absolute;
-        top: 1100px;
+        top: 10px;
         margin: 0;
         width: 100%;
         height: 100%;

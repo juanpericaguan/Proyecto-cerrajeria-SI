@@ -1,0 +1,378 @@
+@import 'variables';
+
+/*Css para menu de todos los HTML*/
+nav ul{
+    display: flex;
+    gap: 2px;
+    justify-content: end;
+    font-size: large;
+    list-style: none;
+
+    li a {
+    display: block;
+    text-decoration: none;
+    color: $color-principal;
+    background-color: $color-secundario;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    }
+
+    li a:hover {
+        background-color: brown;
+    }
+
+    li ul{
+        display: none;
+        position: absolute;
+        min-width: 103px;
+    }
+    
+    li:hover > ul{
+        display: block;
+    }
+}
+
+
+/*Css pie de página*/
+
+.footer {
+    background-color: $color-secundario;
+    padding: 30px 0;
+
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer-links {
+            width: 30%;
+            padding: 0 15px;
+
+            ul {
+                list-style: none;
+            }
+
+            h4 {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 25px;
+                font-weight: 500px;
+                border-bottom: 2px solid $color-principal;
+                padding-bottom: 10px;
+                display: inline-block;
+            }
+
+            ul li a {
+                font-size: 18px;
+                text-decoration: none;
+                color: #bbbbbb;
+                display: block;
+                margin-bottom: 15px;
+                transition: all .3s ease;
+            }
+
+            ul li a:hover {
+                color: #fff;
+                padding-left: 6px;
+            }
+
+            .social-links a {
+                display: inline-block;
+                min-height: 40px;
+                width: 40px;
+                background-color: rgba(255, 255, 255, 0.2);
+                margin: 0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #fff;
+                transition: all .5s ease;
+            }
+            
+            .social-links a:hover {
+                background-color: #00c3ff;
+            }
+        }
+    }
+}
+
+
+/*Css Productos*/
+
+.col__productos {
+    display: flex;
+
+    .biografia {
+        margin-top: 10px;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    
+        .productos__li {
+        
+            margin-top: 5px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        
+            .div__li {
+                display: block;
+                padding: 20px;
+                background-color: $color-secundario;
+                color: $color-principal;
+                border-radius: 5px;
+            
+                li {
+                    list-style: none;
+        
+                    ul li {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    
+        .recomendacion__productos {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 2px solid gainsboro;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .btn__prod button {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: $color-secundario;
+            color: $color-principal;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        
+        .btn__prod button:hover {
+            background-color: brown;
+        }
+    }
+
+    .cards__productos {
+        margin-top: 10px;
+        flex-basis: 50%;
+        width: 100%;
+        height: 100%;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 5px;
+            border: solid 1px #ccc;
+            box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3);
+
+            img {
+                width: 100%;
+                height: 200px
+            }
+
+            .texto--producto {
+                padding: 0 20px 20px;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+
+                .texto__descripcion--producto {
+                    margin: 10px 0 20px;
+                    flex-grow: 1;
+                }
+
+                button {
+                    background-color: gray;
+                    border: 0;
+                    color: #fff;
+                    padding: 10px;
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+    
+                button:hover {
+                    background-color: blue;
+                    cursor: pointer;
+                }  
+            }
+        }
+    } 
+}
+
+
+/*CSS Carousel*/
+.carousel-container {
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 10px;
+
+    .items-carousel {
+        height: 300px;
+        position: relative;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    
+    .flechasCarousel {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .flechasCarousel > a {
+        color: $color-secundario;
+        font-size: 25px;
+        font-style: none;
+    }
+}
+
+.puntos-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: auto;
+}
+.puntos-container > a {
+    color: $color-secundario;
+
+}
+
+
+/*Css del main HTML "Catálogo"*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 5px;
+        border: solid 1px #ccc;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3);
+
+        img {
+            width: 100%;
+            height: 200px
+        }
+
+        .texto {
+            padding: 0 20px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            .texto__descripcion {
+                flex-grow: 1;
+            }
+
+            button {
+                background-color: gray;
+                border: 0;
+                color: #fff;
+                padding: 10px;
+                width: 100%;
+                height: 40px;
+                border-radius: 5px;
+            }
+
+            button:hover {
+                background-color: blue;
+                cursor: pointer;
+            }    
+        } 
+    }
+}
+
+
+
+
+/*Css del main HTML "Servicios"*/
+
+.imagen-texto {
+    position: relative;
+
+    .texto-interior {
+        position: absolute;
+        top: 30px;
+        margin: 10px;
+        padding: 15px;
+
+        h1 {
+            margin-bottom: 10px;
+            font-weight: 800;
+            color: rgba(22, 22, 17, 0.856);
+            font-size: 40px; 
+        }
+
+        h2 {
+            width: 50%;
+            margin-bottom: 10px;
+            border: 0px solid gray;
+            border-radius: 15px;
+            padding: 5px;
+            background-color: rgba(167, 167, 167, 0.459);
+            font-size: 30px;
+            color: rgb(22, 22, 17);
+            font-weight: 600;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(145, 23, 43);
+            color: yellow;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        button:hover {
+            background-color: brown;
+        }
+    }
+}
+
+.imagen-descripcion {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+    .descripcion-parrafos {
+        flex-direction: column;
+
+        h3 {
+            font-size: 30px;
+            color: #2b1919;
+            margin-bottom: 25px;
+            font-weight: 500px;
+            border-bottom: 2px solid rgb(145, 23, 43);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}

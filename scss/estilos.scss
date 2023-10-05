@@ -341,36 +341,44 @@ footer{
         width: 100%;
     }
 
-    .productos__li{
-        margin-bottom: 5px;
+    .col__productos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .productos__li{
+            margin-bottom: 5px;
+        }
+    
+        .recomendacion__productos {
+            margin: 0;
+        }
+    
+        .btn__prod {
+            margin-top: 0;
+        }
     }
 
-    .recomendacion__productos {
-        margin: 0;
-    }
-
-    .btn__prod {
-        margin-top: 0;
-    }
+    
 
     .carousel-container {
         width: auto;
         height: 180px;
         margin-bottom: 5px;
-    }
 
-    .items-carousel {
-        height: auto;
-    }
+        .items-carousel {
+            height: auto;
 
-    .items-carousel img {
-        width: 100%;
-        height: 180px;
-    }
+            img {
+                width: 100%;
+                height: 180px;
+            }
 
-    .flechasCarousel {
-        width: 100%;
-        height: 100%;
+            .flechasCarousel {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     .puntos-container {
@@ -383,45 +391,45 @@ footer{
         max-height: 400vh;
         gap: 10px;
 
+        .card__cilindro {
+            display: none;
+        }
+
     }
 
-    .card__cilindro--fuera {
-        display: none;
-    }
-
+    
     .imagen-texto {
         text-align: left;
-    }
 
-    .imagen__apertura--movil {
-        height: 50vh;
-        margin-top: 20px
-    }
+        .imagen__apertura--movil {
+            height: 50vh;
+            margin-top: 20px
+        }
 
+        .imagen__texto-movil {
+            position: absolute;
+            top: 10px;
+            margin: 0;
+            width: 100%;
+            height: 100%;
 
-    .imagen__texto-movil {
-        position: absolute;
-        top: 10px;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
+            h1 {
+                font-size: 30px;
+                margin: 0;
+                padding: 0;
+            }
 
-    .imagen__texto-movil h1 {
-        font-size: 30px;
-        margin: 0;
-        padding-top: 0;
-    }
+            h2 {
+                font-size: 25px;
+                margin: 0;
+                padding-top: 0;
+            }
 
-    .imagen__texto-movil h2 {
-        font-size: 25px;
-        margin: 0;
-        padding-top: 0;
-    }
-
-    .imagen__texto-movil button {
-        font-size: 10px;
-        margin: 0;
+            button {
+                font-size: 10px;
+                margin: 0;
+            }
+        }
     }
 
     .footer-links {

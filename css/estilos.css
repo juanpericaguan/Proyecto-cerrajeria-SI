@@ -613,13 +613,18 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-  .productos__li {
+  .col__productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .col__productos .productos__li {
     margin-bottom: 5px;
   }
-  .recomendacion__productos {
+  .col__productos .recomendacion__productos {
     margin: 0;
   }
-  .btn__prod {
+  .col__productos .btn__prod {
     margin-top: 0;
   }
   .carousel-container {
@@ -627,14 +632,14 @@ footer {
     height: 180px;
     margin-bottom: 5px;
   }
-  .items-carousel {
+  .carousel-container .items-carousel {
     height: auto;
   }
-  .items-carousel img {
+  .carousel-container .items-carousel img {
     width: 100%;
     height: 180px;
   }
-  .flechasCarousel {
+  .carousel-container .items-carousel .flechasCarousel {
     width: 100%;
     height: 100%;
   }
@@ -647,34 +652,34 @@ footer {
     max-height: 400vh;
     gap: 10px;
   }
-  .card__cilindro--fuera {
+  .cards__candados .card__cilindro {
     display: none;
   }
   .imagen-texto {
     text-align: left;
   }
-  .imagen__apertura--movil {
+  .imagen-texto .imagen__apertura--movil {
     height: 50vh;
     margin-top: 20px;
   }
-  .imagen__texto-movil {
+  .imagen-texto .imagen__texto-movil {
     position: absolute;
     top: 10px;
     margin: 0;
     width: 100%;
     height: 100%;
   }
-  .imagen__texto-movil h1 {
+  .imagen-texto .imagen__texto-movil h1 {
     font-size: 30px;
     margin: 0;
-    padding-top: 0;
+    padding: 0;
   }
-  .imagen__texto-movil h2 {
+  .imagen-texto .imagen__texto-movil h2 {
     font-size: 25px;
     margin: 0;
     padding-top: 0;
   }
-  .imagen__texto-movil button {
+  .imagen-texto .imagen__texto-movil button {
     font-size: 10px;
     margin: 0;
   }

@@ -127,7 +127,7 @@ nav ul li a:hover{
 nav li ul{
     display: none;
     position: absolute;
-    min-width: 83px;
+    min-width: 103px;
 }
 
 nav li:hover > ul{
@@ -267,8 +267,127 @@ strong {
 
 /*Css Productos*/
 
-.carousel-item img {
-    height: 400px;
+.col__productos {
+    display: flex;
+}
+
+.biografia {
+    margin-top: 10px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.productos__li {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos__li li ul li {
+    margin-left: 15px;
+}
+
+.recomendacion__productos {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid gainsboro;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cards__productos {
+    margin-top: 10px;
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.texto--producto {
+    margin: 10px;
+}
+
+.texto__descripcion--producto {
+    margin: 10px 0 20px;
+}
+
+.btn__prod > a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.btn__prod {
+    margin-top: 20px;
+    padding: 10px;
+    width: 85px;
+    border-radius: 20px;
+    background-color: rgb(145, 23, 43);
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+/*CSS Carousel*/
+.carousel-container {
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 10px;
+
+}
+.items-carousel {
+    height: 300px;
+    position: relative;
+    animation: slide 10s infinite alternate ease;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 300px;
+}
+
+
+.flechasCarousel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.flechasCarousel > a {
+    color: var(--color-secundario);
+    font-size: 25px;
+    font-style: none;
+}
+
+.puntos-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: auto;
+}
+.puntos-container > a {
+    color: var(--color-secundario);
+
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: 0; }
+
+    30% { margin-left: -100; }
+    70% { margin-left: -100; }
+
+    75% { margin-left: -200; }
+    100% { margin-left: -200; }
+
 }
 
 /*Css del main HTML "Catálogo"*/
@@ -310,6 +429,7 @@ strong {
     padding: 10px;
     width: 100%;
     height: 40px;
+    border-radius: 5px;
 }
 
 .card .texto > button:hover {
@@ -490,7 +610,8 @@ position: relative;
 }
 
 
-.contacto-info h2 {
+.contacto-info h2,
+.contacto-info h3 {
     padding: 1em;
     text-align: center;
     color: #fff;
@@ -568,6 +689,42 @@ position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .productos__li{
+        margin-bottom: 5px;
+    }
+
+    .recomendacion__productos {
+        margin: 0;
+    }
+
+    .btn__prod {
+        margin-top: 0;
+    }
+
+    .carousel-container {
+        width: auto;
+        height: 180px;
+        margin-bottom: 5px;
+    }
+
+    .items-carousel {
+        height: auto;
+    }
+
+    .items-carousel img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .flechasCarousel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .puntos-container {
+        font-size: 15px;
     }
 
     .cards__candados {

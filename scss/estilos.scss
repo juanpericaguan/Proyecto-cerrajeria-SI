@@ -362,6 +362,14 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        .eslogan {
+            padding: 10px 5px;
+        }
+
+        .mapa {
+            margin: 0 auto;
+        }
     }
 
     .col__productos {
@@ -444,6 +452,11 @@ footer{
             display: none;
         }
 
+    }
+
+    .eslogan__candados--p {
+        line-height: 2;
+        padding: 10px 5px;
     }
 
     

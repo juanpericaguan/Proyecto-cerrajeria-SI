@@ -633,6 +633,12 @@ footer {
     flex-direction: column;
     width: 100%;
   }
+  .costado__movil--column .eslogan {
+    padding: 10px 5px;
+  }
+  .costado__movil--column .mapa {
+    margin: 0 auto;
+  }
   .col__productos {
     display: flex;
     flex-direction: column;
@@ -692,6 +698,10 @@ footer {
   }
   .cards__candados .card__cilindro {
     display: none;
+  }
+  .eslogan__candados--p {
+    line-height: 2;
+    padding: 10px 5px;
   }
   .imagen-texto {
     text-align: left;

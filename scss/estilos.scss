@@ -384,6 +384,16 @@ footer{
         justify-content: center;
         width: 100%;
         margin: 0 auto;
+
+        li ul{
+            display: none;
+            position: absolute;
+            max-width: 100px;
+        }
+        
+        li:hover > ul{
+            display: block;
+        }
     }
 
     .costado__movil--column {

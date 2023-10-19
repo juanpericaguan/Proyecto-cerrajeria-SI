@@ -320,6 +320,9 @@ nav ul li:hover > ul {
   font-size: 18px;
   line-height: 1.5;
 }
+.imagen-descripcion .descripcion-parrafos ul li {
+  list-style: none;
+}
 
 * {
   margin: 0;
@@ -427,6 +430,11 @@ footer {
   font-weight: 700;
 }
 
+.mapa iframe {
+  width: 95%;
+  margin: 5px auto;
+}
+
 /*Css section derecho*/
 .eslogan {
   border: double 4px rgb(145, 23, 43);
@@ -438,7 +446,8 @@ footer {
   line-height: 1.5;
   font-size: 25px;
   text-align: center;
-  margin: 5px;
+  margin: 5px auto;
+  width: 100%;
 }
 
 .public__prod {
@@ -602,6 +611,10 @@ footer {
     gap: 5px;
     grid-template-areas: "aside aviso" "aside encabezado" "aside princ" "aside costado" "pie pie";
   }
+  article {
+    width: 100%;
+    height: auto;
+  }
   .cards__candados {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -609,12 +622,16 @@ footer {
   }
   .costado__tablet {
     display: flex;
-    width: 95%;
+    width: 100%;
     gap: 20px;
   }
-  .eslogan__tablet--index {
+  .costado__tablet .eslogan__tablet--index {
     height: 95%;
     padding-top: 80px;
+    flex-basis: 50%;
+  }
+  .costado__tablet .mapa__tablet {
+    flex-basis: 50%;
   }
   .imagen__apertura--movil {
     margin-top: 20px;
@@ -627,6 +644,15 @@ footer {
     grid-template-rows: auto;
     gap: 10px;
     grid-template-areas: "aviso" "aside" "encabezado" "princ" "costado" "pie";
+  }
+  article {
+    width: 100%;
+    height: auto;
+  }
+  nav ul {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
   }
   .costado__movil--column {
     display: flex;
@@ -713,6 +739,7 @@ footer {
   .imagen-texto .imagen__texto-movil {
     position: absolute;
     top: 10px;
+    bottom: 10px;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -721,11 +748,14 @@ footer {
     font-size: 30px;
     margin: 0;
     padding: 0;
+    font-weight: 700;
+    line-height: 1;
   }
   .imagen-texto .imagen__texto-movil h2 {
     font-size: 25px;
     margin: 0;
     padding-top: 0;
+    font-weight: 500;
   }
   .imagen-texto .imagen__texto-movil button {
     font-size: 10px;
